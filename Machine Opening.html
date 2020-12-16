@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <META http-equiv=Content-Type content="html; charset=utf-8" writer="pico korea team">
+  <title>Machine Opening</title>
+
+  <script type="text/javascript">
+    var imgArray=new Array();
+    imgArray[0]="https://github.com/heather-choi/DMT2021/blob/main/06_Exmachine.jpg?raw=true";
+    imgArray[1]="https://github.com/heather-choi/DMT2021/blob/main/06_Exmachine2.jpg?raw=true";
+
+    function showImage(){
+      var imgNum=Math.round(Math.random()*3);
+      var objImg=document.getElementById("introimg");
+      objImg.src=imgArray[imgNum];
+      setTimeout(showImage,2000); }
+  </script>
+</head>
+
+<body onload="showImage()">
+  <img id="introimg" border="0">
+</body>
+</html>
