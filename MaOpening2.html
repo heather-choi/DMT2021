@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <META http-equiv=Content-Type content="html; charset=utf-8" writer="pico korea team">
+  <title>Machine Opening</title>
+
+  <script type="text/javascript">
+    var bigPic=document.querySelector("#big");
+    var smallPics=document.querySelectorAll(".small");
+
+    for(vat i=0; i<smallPics.length;i++) {
+      smallPics[i].addEventListener("click", changepic);
+    }
+
+  function changepic() {
+    var smallPicAttribute = this.getAttribute("src");
+    bigPic.setAttribute("src", smallPicAttribute);
+  }
+  </script>
+</head>
+
+<body>
+<div id="content">
+<div id="bigimages">
+  <img id="big" src="https://github.com/heather-choi/DMT2021/blob/main/06_Exmachine.jpg?raw=true" />
+</div>
+  <div id="smallimages">
+    <img class="small" src="https://github.com/heather-choi/DMT2021/blob/main/06_Exmachine2.jpg?raw=true" />
+  </div>
+</div>
+
+</body>
+</html>
